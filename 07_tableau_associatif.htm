@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Tableau associatif</title>
+	<style type="text/css">
+		.ligne {
+			border:  1px dotted #aaa;
+		}
+		.ligne > div{
+			
+		}
+
+		.ligne > div > div{
+			display:  inline-block;
+			padding :  10px;
+			border:  1px dotted #aaa;	
+		}
+		.ligne > div > div:first-child{
+			background-color :  #ccc;
+		}
+
+	</style>
+</head>
+<body>
+</body>
+
+	<article id='resultat'></article>
+
+	<script type="text/javascript" src="collection_provinces.js"></script>
+	<script type="text/javascript">
+
+	function parcourir_objet(____________________________) {
+		var sChaine = '<div class="ligne">'
+		for (propriete in  monObjet) {
+			console.log(propriete + ' => ' + monObjet[propriete])
+			sChaine += '<div>'
+			sChaine += '<div>' + propriete + '</div>' 
+			sChaine += '<div>' + monObjet[propriete] + '</div>'
+			sChaine += '</div>'
+		}
+		sChaine += '</div>'
+		return sChaine
+	}
+
+	var sChaine = ___________________
+	for (var k=0; k < collection_provinces.length ; k++){
+		sChaine += parcourir_objet(______________________)
+	}
+	sChaine += ___________________
+	elmResultat = document.getElementById(___________________)
+	elmResultat.innerHTML = ________________________
+
+
+
+	</script>
+
+</html>
